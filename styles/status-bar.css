@@ -1,0 +1,14 @@
+#status-bar {
+    display: flex;
+    gap: .75rem;
+    background-color: var(--color-danger);
+    padding: .7rem;
+    border-radius: .75rem;
+
+    p {
+        width: 14.4375rem;
+        font: var(--label);
+        font-size: .9rem;
+        color: var(--bg-secondary);
+    }
+}

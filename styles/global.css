@@ -43,3 +43,7 @@
         display: initial;
     }
 }
+
+li {
+    list-style: none;
+}
