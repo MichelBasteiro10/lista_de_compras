@@ -9,10 +9,19 @@
         input {
             padding: .7rem;
             border-radius: 0.75rem;
-            border: 2px solid var(--border-primary);
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s ease;
 
             &::placeholder {
                 color: var(--content-tertiary);
+            }
+
+            &:hover {
+                border: 1px solid var(--border-hover);
+            }
+
+            &:focus {  
+                outline: 2px solid var(--color-brand);
             }
         }
 
@@ -23,6 +32,7 @@
             color: var(--bg-secondary);
             font:var(--label);
             border: none;
+            transition: all 0.5s ease;
 
             &:hover {
                 background-color: var(--color-brand-hover);
