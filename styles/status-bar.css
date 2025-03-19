@@ -12,3 +12,13 @@
         color: var(--bg-secondary);
     }
 }
+
+@media (width >= 80rem) {
+    #status-bar {
+        width: 39.1875rem;
+
+        p {
+            width: 33.1875rem;
+        }
+    }
+}

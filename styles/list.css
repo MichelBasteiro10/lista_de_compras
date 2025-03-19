@@ -21,5 +21,29 @@
             width: 1.3rem;
             height: 1.3rem;
         }
+
+        & img[src*="checkbox-default"]:hover {
+            content: url(../assets/icons/checkbox-hover.svg);
+        }
+
+        & img[src*="checkbox-default"]:has:checked {
+            content: url(../assets/icons/checkbox-selected.svg);
+        }
     }
 }
+
+@media (width >= 80rem) {
+    #list {
+        width: 39.1875rem;
+
+        .item {
+            width: 100%;
+
+            p {
+                width: 33.1875rem;
+            }
+        } 
+    }
+}
+
+

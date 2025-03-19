@@ -40,3 +40,27 @@
         }
     }
 }
+
+@media (width >= 80rem) {
+    #add-item {
+        width: 39.1875rem;
+
+        form {
+            flex-direction: row;
+            gap: 1rem;
+
+            input {
+                width: 28.1875rem;
+                border: 2px solid var(--border-primary);
+
+                &::placeholder {
+                    font-size: 1rem;
+                }
+            }
+
+            button {
+                width: 10rem;
+            }
+        }
+    }
+}
