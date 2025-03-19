@@ -5,53 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <title>Lista de compras</title>
     <link rel="stylesheet" href="styles/index.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <main>
-      <header class="desktop-only">
+      <div id="header" class="desktop-only container">
         <img src="assets/icons/logo.svg" alt="" />
         <h1>quicklist</h1>
-      </header>
+      </div>
 
       <div id="back" class="container">
         <img src="assets/icons/left-arrow.svg" alt="Seta para esquerda" />
         <span>Voltar</span>
       </div>
 
-      <h1 class="container">Compras da semana</h1>
+      <div id="title" class="container">
+        <h2>Compras da semana</h2>
+      </div>
 
       <div id="add-item" class="container">
         <form>
-          <input type="text" placeholder="Adicione um novo item" />
+          <input
+            type="text"
+            placeholder="Adicione um novo item"
+            id="new-item"
+          />
           <button type="submit">Adicionar item</button>
         </form>
       </div>
 
       <div id="list" class="container">
-        <ul>
-          <li class="item">
-            <img src="assets/icons/checkbox-default.svg" alt="Checkbox" />
-            <p>Limão</p>
-            <img src="assets/icons/delete.svg" alt="Lixeira" />
-          </li>
-          <li class="item">
-            <img src="assets/icons/checkbox-default.svg" alt="Checkbox" />
-            <p>Limão</p>
-            <img src="assets/icons/delete.svg" alt="Lixeira" />
-          </li>
-        </ul>
+        <ul></ul>
       </div>
 
       <div id="status-bar" class="hide container">
-        <img src="assets/icons/alert.svg" alt="Checkbox"/>
+        <img src="assets/icons/alert.svg" alt="Checkbox" />
         <p>O item foi removido da lista</p>
-        <img src="assets/icons/remove.svg" alt="delete"/>
+        <img src="assets/icons/remove.svg" alt="delete" />
       </div>
     </main>
 
