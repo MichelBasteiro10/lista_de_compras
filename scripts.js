@@ -10,8 +10,16 @@ form.onsubmit = (event) => {
     event.preventDefault();
     addItemList();
     removeItem();
-    checkboxChecked();
 };
+
+// Evento do checkbox.
+list.addEventListener("pointerdown", (event) => {
+    if (event.target.tagName === "IMG" && event.target.src.includes("checkbox-default")) {
+        event.target.src = "assets/icons/checkbox-selected.svg";
+    } else if (event.target.tagName === "IMG" && event.target.src.includes("checkbox-selected")) {
+        event.target.src = "assets/icons/checkbox-default.svg";
+    }
+});
 
 // Criando novo elemento da lista de compras.
 function addItemList() {
@@ -46,20 +54,6 @@ function addItemList() {
 
     // Limpando o input.
     newItem.value = ``
-}
-
-function checkboxChecked () {
-    list.addEventListener(`click`, (event) => {
-        // Verifica se o clique foi no checkbox
-        if (event.target.tagName ===`img` && event.target.src.includes(`checkbox-default`));
-
-        // Alterna entre default e checked.
-        if (event.target.src.includes(`checkbox-default`)) {
-            event.target.src = "assets/icons/checkbox-selected.svg";
-        } else {
-            event.target.src = "assets/icons/checkbox-default.svg";
-        }
-    });
 }
 
 // Removendo item da lista
