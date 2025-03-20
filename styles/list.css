@@ -13,7 +13,7 @@
         gap: 0.75rem;
 
         p {
-            width: 14.4375rem;
+            width: 100%;
             font: var(--paragraph);
         }
 
@@ -38,10 +38,6 @@
 
         .item {
             width: 100%;
-
-            p {
-                width: 33.1875rem;
-            }
         } 
     }
 }
